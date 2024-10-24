@@ -1,0 +1,523 @@
+/* styles.css */
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(to bottom, #f0f0f0, #ccc);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+}
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(to bottom, #f0f0f0, #ccc);
+  
+  display: flex;
+  
+  align-items: center;
+} */
+.main_title1 {
+  /* Container styles */
+  padding: 80px; /* Add some padding */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+  /* margin-bottom: 10px; Add some margin below */
+}
+
+.main_title1 h1 {
+  /* H1 styles */
+  font-size: 36px; /* Increase font size */
+  font-weight: bold; /* Make it bold */
+  color: #333; /* Dark gray text color */
+  margin-bottom: 10px; /* Add some margin below */
+}
+
+.main_title1 h4 {
+  /* H4 styles */
+  font-size: 18px; /* Increase font size */
+  font-weight: normal; /* Normal font weight */
+  color: #666; /* Medium gray text color */
+}
+/* Login Container Styles */
+.login-container1 {
+  width: 350px;
+  /* margin: 2px auto ; */
+  margin-left: 20px auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* display: inline-block; */
+}
+
+/* Login Header Styles */
+.login-header1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-header1 h1 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-header1 p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Login Form Styles */
+.login-form1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-form1 input[type="text"],.login-form1 input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-form1 input[type="text"]:focus,.login-form1 input[type="password"]:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form1 button[type="submit"] ,.login-form1 button[type="button"]{
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login-form1 button[type="submit"]:hover ,.login-form1 button[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Login Footer Styles */
+.login-footer1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-footer1 p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Additional Styles */
+.login-container1 {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+/* The modal window */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  justify-content: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Form styles */
+
+#v_fom {
+  display: block;
+  margin: 20px auto;
+}
+
+#v_fom label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#v_fom input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#m_sent {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#m_sent:hover {
+  background-color: #3e8e41;
+}
+
+#v_msg {
+  color: #df2020;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Verify OTP styles */
+
+#Verify {
+  display: none;
+}
+
+#Verify label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#Verify input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#m_sub {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#m_sub:hover {
+  background-color: #3e8e41;
+}
+
+#v_otp {
+  color: #df2020;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* Modal Styles */
+.modalp {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-contentp {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 250px;
+}
+
+
+
+
+
+
+
+#email-verificationp {
+  display: flex;
+  align-items: center;
+}
+
+#email-verificationp input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+#verify-email-btnp {
+  flex-direction: column;
+  width: 25%;
+  padding: 8px;
+  margin-left: 10px;
+  margin-top: -10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#verify-email-btnp:hover {
+  background-color: #3e8e41;
+}
+
+.otpp {
+  display: flex;
+  align-items: center;
+
+}
+
+.otpp input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.otpp button {
+  flex-direction: column;
+  width: 25%;
+  padding: 8px;
+  margin-left: 10px;
+  margin-top: -10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.otpp button:hover {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+#password-resetp form {
+  /* Make the form take up the full width of the container */
+  width: 100%;
+}
+
+#password-resetp label {
+  /* Make the labels display as block elements */
+  display: block;
+  /* Add some margin to the bottom of the labels */
+  margin-bottom: 10px;
+}
+
+#password-resetp input[type="password"] {
+  /* Make the input fields take up the full width of the container */
+  width: 100%;
+  /* Add some padding to make the input fields look nicer */
+  padding: 10px;
+  /* Add some border to make the input fields stand out */
+  border: 1px solid #ccc;
+  /* Add some border radius to make the input fields look more modern */
+  border-radius: 5px;
+  /* Add some box shadow to make the input fields look more 3D */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#password-resetp button[type="submit"], #password-resetp button {
+  /* Make the button take up the full width of the container */
+  width: 100%;
+  /* Add some padding to make the button look nicer */
+  padding: 10px;
+  /* Add some background color to make the button stand out */
+  background-color: #4CAF50;
+  /* Add some color to make the button text stand out */
+  color: #fff;
+  /* Add some border to make the button stand out */
+  border: none;
+  /* Add some border radius to make the button look more modern */
+  border-radius: 5px;
+  /* Add some cursor to make the button look more clickable */
+  cursor: pointer;
+}
+
+#password-resetp button[type="submit"]:hover, #password-resetp button:hover {
+  /* Add some background color to make the button stand out on hover */
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+.closep {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closep:hover,
+.closep:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+ /* ********************************************************************************************************************************************** */
+ .register-container2 {
+  width: 500px;
+  margin:  auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Register Header Styles */
+.register-header2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-header2 h1 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.register-header2 p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Register Form Styles */
+.register-form2 {
+  /* display:none; */
+  /* flex-direction: column; */
+  align-items: center;
+  padding: 10px;
+}
+
+.register-form2 label {
+  margin-bottom: 10px;
+}
+
+.register-form2 input[type="text"], .register-form2 input[type="email"], .register-form2 input[type="password"], .register-form2 input[type="number"],.register-form2 input[type="date"] , .register-form2 input[type="file"]{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.register-form2 input[type="text"]:focus, .register-form2 input[type="email"]:focus, .register-form2 input[type="password"]:focus, .register-form2 input[type="number"]:focus , .register-form2 input[type="date"]:focus, .register-form2 input[type="file"]:focus{
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#rl {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+}
+
+.register-form2 select {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.register-form2 button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.register-form2 button[type="submit"]:hover {
+  background-color: #3e8e41;
+}

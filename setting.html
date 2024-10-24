@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="setting.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Social Website - Home</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="setting.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        
+<nav>
+                    <ul><li><img id="logo" src="./bg/4.png" alt=""></li>
+                        <li><a href="#">Home</a></li>            
+                        <li><img id="logoutpost" src="" alt="logout" srcset="">
+                            <ul id="logoutlist">
+                                <li><a href="profile.html">PROFILE</a></li>
+                                <li><a href="mypost.html">MY POST</a></li>
+                                <li><a href="setting.html">SETTING</a></li>
+                                <li><a id="lgout" href="">Logout</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+        </nav>
+    </header>
+    
+<section>
+<div class="main_container"></div>
+</section>
+
+
+
+<div id="modalp" class="modalp">
+    <div class="modal-contentp">
+      <span class="closep">&times;</span>
+      <form id="modal-formp" method="post">
+        <div id="email-verificationp">
+          <input type="password" id="emailp" name="emailp" placeholder="Enter Old Password" required>
+          <button type="button" id="verify-email-btnp">Enter</button>
+        </div>      
+      <div id="password-resetp" >
+            <label for="new-passwordp">New Password:</label>
+            <input type="password" id="new-passwordp" name="new-passwordp" required>
+            <label for="confirm-passwordp">Confirm Password:</label>
+            <input type="password" id="confirm-passwordp" name="confirm-passwordp" required>
+            <button type="button" id="reset-password-btnp">Reset Password</button>
+      </div>
+     </form>
+    </div>
+  </div>
+
+
+
+<!-- Add a button to open the modal -->
+
+<!-- The modal HTML remains the same -->
+<div id="email_change" class="email_change">
+  <div class="modal-contente">
+    <span class="closee">&times;</span>
+    <form id="modal-forme" method="post">
+      <div id="detailse">
+        <input type="email" id="maile" name="maile" placeholder="Enter E-Mail" required>
+        <input type="password" id="emaile" name="emaile" placeholder="Enter Password" required>
+        <button type="button" id="verify-email-btne">Enter</button>
+      </div>      
+      <div id="password-resete" >
+        <label for="new-email">New E-Mail:</label>
+        <input type="email" id="new-email" name="new-email" required><span id="cmsg"></span>
+        <button type="button" id="ock">Enter</button>
+        <input type="text" id="confirm-otp" name="confirm-otp" placeholder="Enter OTP" required>
+        <button type="button" id="final_email">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="modal-del" class=" modal_del">
+    <div class="con_del">
+        <div id="firs_del" >
+          <p>Hey we heard you want to leave</p>
+          <label for="del_op">Why u want to delete account:</label>
+          <select name="del_op" id="del_op">
+            <option value="want to focus on something else">want to focus on something else</option>
+            <option value="to much distraction">to much distraction</option>
+            <option value="want to free up some space">want to free up some space</option>
+            <option value="over usage">over usage</option>
+            <option value="other">other</option>
+          </select>
+          <button id="next-step">delete account</button>
+        </div>
+        <div id="sec_del">
+            <label for="del_pass">Enter password</label>
+            <input type="text" id="del_pass" name="del_pass" placeholder="enter password">
+            <button id="delete_acc">Delete</button>
+        </div>
+    </div>
+</div>
+    
+    <footer>
+        <p>&copy; 2024 Social Website</p>
+    </footer>
+
+</body>
+</html>
+

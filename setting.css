@@ -1,0 +1,462 @@
+    /* Global Styles */
+  
+  * {
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+      /* display: flex; */
+      position: relative;
+      justify-content: center;  
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(45deg, #0cbfcc, #d3faf9);
+    }
+    
+  
+  /* Header Section */
+  
+  
+  nav {
+     
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      max-height: 70px;
+    }
+    
+    nav li {
+      
+      position: relative;
+    }
+    
+    nav li:last-child {
+      margin-right: 0;
+    }
+    
+    
+    nav a {
+      color: #2f2d2d;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    nav a:hover {
+      color: #ccc;
+    }
+    
+    #logo {
+      margin-top: -10px;
+      margin-left: -15px;
+      width: 180px;
+      height: auto;
+    }
+    
+  
+  
+  
+  
+  
+  
+  
+  /* logout post */
+  
+  
+  #logoutpost {
+      width: 50px;
+      height: 50px;
+      border-radius: 40%;
+      margin: 0 10px;
+      
+    }
+  
+    #logoutlist {
+      display: block;
+      text-align: left; /* center the text within the ul */
+      margin: 0;
+      padding: 0;
+    }
+    
+    #logoutlist li {
+      /* make li items inline-block */
+      margin-bottom: 10px; /* add 10px space between li items */
+      vertical-align: middle;
+    }
+    
+    #logoutlist li:first-child {
+      margin-left: 0; /* remove left margin from first item */
+    }
+    
+    #logoutlist li:last-child {
+      margin-right: 0; /* remove right margin from last item */
+    }
+    
+    #logoutlist a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    #logoutlist a:hover {
+      color: #ccc;
+    }
+
+
+    .main_container {
+        width: 30%;
+        margin: 40px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+
+    }
+    .main_container button {
+        background-color: #ddd;
+        color: #000000; /* White */
+        justify-content: space-around;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color:#0cbfcc ; /* Dark Green */
+      }
+      
+      button:active {
+        background-color:#0cbfcc; /* Dark Green */
+        box-shadow: 0 5px #13cdc7;
+        transform: translateY(4px);
+      }
+
+
+
+
+
+
+/* Modal Styles */
+.modalp {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-contentp {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 250px;
+}
+
+
+
+
+
+
+
+#email-verificationp {
+  display: flex;
+  align-items: center;
+}
+
+#email-verificationp input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+#verify-email-btnp {
+  flex-direction: column;
+  width: 25%;
+  padding: 8px;
+  margin-left: 10px;
+  margin-top: -10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#verify-email-btnp:hover {
+  background-color: #3e8e41;
+}
+
+.otpp {
+  display: flex;
+  align-items: center;
+
+}
+
+.otpp input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.otpp button {
+  flex-direction: column;
+  width: 25%;
+  padding: 8px;
+  margin-left: 10px;
+  margin-top: -10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.otpp button:hover {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+#password-resetp form {
+  /* Make the form take up the full width of the container */
+  width: 100%;
+}
+
+#password-resetp label {
+  /* Make the labels display as block elements */
+  display: block;
+  /* Add some margin to the bottom of the labels */
+  margin-bottom: 10px;
+}
+
+#password-resetp input[type="password"] {
+  /* Make the input fields take up the full width of the container */
+  width: 100%;
+  /* Add some padding to make the input fields look nicer */
+  padding: 10px;
+  /* Add some border to make the input fields stand out */
+  border: 1px solid #ccc;
+  /* Add some border radius to make the input fields look more modern */
+  border-radius: 5px;
+  /* Add some box shadow to make the input fields look more 3D */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#password-resetp button[type="submit"], #password-resetp button {
+  /* Make the button take up the full width of the container */
+  width: 100%;
+  /* Add some padding to make the button look nicer */
+  padding: 10px;
+  /* Add some background color to make the button stand out */
+  background-color: #4CAF50;
+  /* Add some color to make the button text stand out */
+  color: #fff;
+  /* Add some border to make the button stand out */
+  border: none;
+  /* Add some border radius to make the button look more modern */
+  border-radius: 5px;
+  /* Add some cursor to make the button look more clickable */
+  cursor: pointer;
+}
+
+#password-resetp button[type="submit"]:hover, #password-resetp button:hover {
+  /* Add some background color to make the button stand out on hover */
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+.closep {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closep:hover,
+.closep:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.email_change {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-contente {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.closee {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closee:hover,
+.closee:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+#password-resete {
+  display: none; /* Hide the password reset section by default */
+}
+
+#detailse {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+.modal_del {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.con_del {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.con_del p {
+  margin-bottom: 20px;
+}
+
+.con_del label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.con_del select, .con_del input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.con_del button {
+  width: 100%;
+  height: 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.con_del button:hover {
+  background-color: #3e8e41;
+}
+
+
+
+
+      
+  
+  /* Footer Section */
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+  
+  footer p {
+      font-size: 14px;
+      margin-bottom: 3px;
+  }
+  
+  /* For screens smaller than 768px (e.g., tablets and mobile devices) */
+  @media (max-width: 767px) {
+      body {
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 8px;
+      }
+    }
+    
+    /* For screens smaller than 480px (e.g., smaller mobile devices) */
+    @media (max-width: 479px) {
+      body {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 6px;
+      }
+    }
+  
+
+    
+  
+  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Social Website - Home</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        
+<nav>
+                    <ul><li><img id="logo" src="./bg/4.png" alt=""></li>
+                        <li><a href="#">Home</a></li>            
+                        <li><a id="post-modal-trigger12" class="btn href="#">UPLOAD</a></li>
+                        <li><img id="logoutpost" src="" alt="logout" srcset="">
+                            <ul id="logoutlist">
+                                <li><a href="profile.html">PROFILE</a></li>
+                                <li><a href="mypost.html">MY POST</a></li>
+                                <li><a href="setting.html">SETTING</a></li>
+                                <li><a id="lgout" href="">Logout</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <!-- <img src="profile-pic.jpg" alt="Profile Picture"> -->
+        <h2 id="fuser">Welcome</h2>
+        <!-- <p>View your profile and update your information.</p> -->
+        <!-- <button>Edit Profile</button> -->
+    </section>
+
+    <div id="post-modal12" class="modal12">
+      <div class="modal-content12">
+        <section id="post_section12" class="post12">
+          <h2>What's on your mind?</h2>
+          <button id="fir_btn">upload</button>
+          <button id="start-camera">Start Camera</button>
+          <div class="upload-btn-container">
+            <form action="" method="post" enctype="multipart/form-data">
+              <input type="file" id="upload-post-pic" name="upload-post-pic" accept="image/*,video/*,audio/*">
+              <label for="upload-post-pic" class="upload-btn12">
+                <i class="fas fa-camera"></i>
+                Add Photo/Video
+              </label>
+              <textarea id="post-desc12" name="desc" placeholder="Add a description..."></textarea>
+            <button id="post-btn12" name="fsbt">Post</button>
+          </form> 
+        </div>
+        <div class="che">
+          <video id="video" width="320" height="240" autoplay style="background-color:cyan; "></video> 
+          <button id="click-photo">Click Photo</button>
+          <div id="show">
+          <canvas id="canvas" width="320" height="240" style="background-color:yellow;object-fit: contain;"></canvas>
+          <textarea id="post-desc13" name="desc" placeholder="Add a description..."></textarea>
+          <button id="post-btn13" name="fsbt">Post</button>
+        </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Feed Section -->
+    <section class="feed">
+        <div id="p_table" class="post">
+        </div> 
+        <!-- Add more posts here -->    </section>
+        <section id="lm">
+        
+        </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Social Website</p>
+    </footer>
+
+</body>
+</html>
+

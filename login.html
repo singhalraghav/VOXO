@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>VOXO</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+    
+</head>
+<body>
+  <div class="main_title1">
+    <h1>VOXO</h1>
+    <h4>A Place WWhere Yue can express your View and Connect to world</h4>
+  </div>
+    <div class="login-container1">
+        <div class="login-header1">
+            <h1>Login to VOXO</h1>
+            <p>Connect with World, share your moments, and discover new things!</p>
+        </div>
+        <form class="login-form1" id="login" method="post" action="">
+            <input type="text" name="lname" id="lname" placeholder="Username/Email" required>
+            <input type="password" name="lpass" id="lpass" placeholder="Password"  required>
+            <button type="submit" name="log" id="log">Login</button>
+            <button type="button" id="open-modal-btnp">Forgot Password</button>
+            <p>Don't have an account? <a id="reg" href="#">Sign up</a></p>
+        </form>
+        <div class="login-footer1">
+            <p>&copy; 2024 Social Media Platform</p>
+        </div>
+    </div>
+
+    <div class="modal" id="email-verification-modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="v_fom" method="post" action="">
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="off" >
+            <button id="m_sent" type="submit" >ENTER</button>
+          </form>
+            <div id="Verify">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" required>
+                <button id="m_sub" type="button">Verify</button><span id="v_otp"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modalp" class="modalp">
+        <div class="modal-contentp">
+          <span class="closep">&times;</span>
+          <form id="modal-formp">
+            <div id="email-verificationp">
+              
+              <input type="text" id="emailp" placeholder="Enter Your Email Or UserName" required>
+              <button id="verify-email-btnp">SENT</button>
+            </div>
+            <div class="otpp" style="display: none;">
+                <input type="text" id="cotp" placeholder="Enter OTP">
+                <button  id="votp">SUBMIT</button>
+            </div>
+          </form>
+          <div id="password-resetp" style="display: none;">
+            <form action="">
+                <label for="new-passwordp">New Password:</label>
+                <input type="password" id="new-passwordp" name="new-passwordp" required>
+                <label for="confirm-passwordp">Confirm Password:</label>
+                <input type="password" id="confirm-passwordp" name="confirm-passwordp" required>
+                <button id="reset-password-btnp">Reset Password</button>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    <div class="register-container2">
+        <div class="register-header2">
+            <h1>Register for VOXO</h1>
+            <p>create account and connect to world</p>
+        </div>
+        <form class="register-form2" id="reg_for" method="post" action="" enctype="multipart/form-data" >
+            <label for="rname">Full Name:</label>
+            <input type="text" name="rname" id="rname" required><br>
+    
+            <label for="urname">UserName:</label>
+            <input type="text" name="urname" id="urname" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" name="remail" id="remail" required><br>
+    
+            <label for="rnum">Number:</label>
+            <input type="number" name="rnum" id="rnum" required><br>
+    
+            <label for="gen" id="rl">Gender:</label>
+            <label><input type="radio" name="gen" value="Male"> Male</label>
+            <label><input type="radio" name="gen" value="Female"> Female</label>
+            <label><input type="radio" name="gen" value="Other"> Other</label>
+            <br>
+    
+            <label for="bdate">Date of Birth:</label>
+            <input type="date" name="bdate" id="bdate" required><br>
+    
+            <label for="pic">Add a Profile Pic:</label>
+            <input type="file" name="pic" id="pic" accept="image/*"><br>
+
+            <input type="text" name="bio" id="bio" placeholder="Write Something About Yourself"><br>
+    
+    
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" required><br>
+    
+            <label for="pass1">Confirm Password:</label>
+            <input type="password" name="pass1" id="pass1" required><br>
+    
+            <button type="submit" name="sbt" id="sbt">Register</button><br><br>
+            <p>Already have an account? <a id="back" href="#">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+ 
+  .cardsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px; /* remove padding from table */
+    border-collapse: collapse; /* remove border spacing */
+    border: none;
+
+  }
+  
+ 
+  
+  .cardx {
+  position: relative;
+  margin: auto;
+  width: 375px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+
+  height: 450px;
+  
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  }
+/*   
+  .cardx:hover {
+  height: 450px;
+  } */
+  
+  .imgBx {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+  }
+
+
+  .vid {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+    background:#fff;
+    transition: 0.5s;
+    }
+
+    .aud {
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 50px;
+      border-radius: 20px;
+      overflow: hidden;
+      background:#fff;
+      transition: 0.5s;
+      }
+
+    
+  
+  /* .cardx:hover .imgBx {
+  width: 250px;
+  height: 250px;
+  } */
+
+  /* .cardx:hover .vid {
+    width: 90%;
+    height: 240px;
+  } */
+
+  /* .cardx:hover .aud {
+    width: 300px;
+    height: 50px;
+    } */
+  
+  
+  
+  .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+  .vid video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .imgBx audio {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      }
+
+  
+  .cardx .content {
+  position:initial;
+  top:0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 20px;
+  overflow: hidden;
+  
+  }
+  
+  .cardx .content .details {
+  text-align: center;
+  width: 100%;
+
+  /* transition: 0.5s; */
+  /* transform: translateY(128px); */
+  }
+  
+  /* .cardx:hover .content .details {
+  transform: translateY(0px);
+  } */
+  
+  #tex{
+  text-decoration: none;
+  }
+  
+  .pro_name {
+    
+    margin-bottom: 10px; /* add some space below the username */
+  }
+  
+  .pro_name h2 {
+    display: contents;
+    font-size: 18px; /* adjust font size to your liking */
+    font-weight: bold; /* make the username bold */
+    margin: 0; /* remove default margin from h2 */
+
+  }
+  
+  .pro_name span {
+    font-size: 14px; /* adjust font size to your liking */
+    color: #666; /* adjust text color to your liking */
+    font-weight: normal; /* make the post description normal font weight */
+    display: flex; /* add this property */
+    padding-left: 20px;
+    
+  }
+  
+  
+  .cardx .content .details .data {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px ;
+  }
+  
+  /* .cardx .content .details h3 {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+  }
+  
+  .cardx .content .details h3 span {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.5;
+  } */
+
+
+
+
+  
+  .likes{
+    display:block;
+    width: 40%;
+    height: auto;
+  }
+  .lk{
+    margin-top: 10px;
+    width: 75%; /* Set image width */
+    height: 70%; /* Set image height */
+    transition: all 0.3s ease-in-out; /* Add a transition effect */
+    border-radius: 50%;
+    
+  }
+  .highlight {
+    border: 2px solid #337ab7; /* Add a blue border on highlight */
+    box-shadow: 0 0 10px #337ab7; /* Add a blue glow effect */
+    background-color: #337ab7;
+  }
+  .highlight1 {
+    border: 2px solid #e4201d; /* Add a blue border on highlight */
+    box-shadow: 0 0 10px #e4201d; /* Add a blue glow effect */
+    background-color:#e4201d;
+  }
+  .cardx .content .details .data  span {
+  font-size: 1em;
+  color: #555;
+  line-height:0px;
+  font-weight: 600;
+  }
+
+  .comments{
+    width: 40%;
+    height: auto;
+  }
+
+  .com{
+    width: 75%; /* Set image width */
+    height: 75%; /* Set image height */
+    transition: all 0.3s ease-in-out; /* Add a transition effect */
+  }
+  
+  .follow{
+    margin-top: 40px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border: none;
+  }

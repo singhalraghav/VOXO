@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Profile</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="profile.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        
+        <nav>
+                    <ul><li><img id="logo" src="./bg/4.png" alt=""></li>
+                        <li><a href="home.html">Home</a></li>            
+                        <li><img id="logoutpost" src="p_pic/1133950.jpg" alt="logout" srcset="">
+                            <ul id="logoutlist">
+                                <li><a href="mypost.html">My Post</a></li>
+                                <li>Setting</li>
+                                <li><a id="lgout" href="">Logout</a></li>
+                                
+                            </ul>
+                        </li>                    
+                    </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Profile Section -->
+    <section >
+        <div class="profile">
+            <div id="ppic">
+                <img id="profile_image" src="" alt="Profile Picture">
+                <h4 id="uname"></h4>
+            </div>
+            <div id="pdis">
+                <h2 id="fuser"><span id="opo"></span><img class="clickable-image" src="bg/5.png" alt="msado" srcset=""></h2>  
+                <p id="bio">View your profile and update your information.</p> 
+                <div class="pro_det">
+                    <div class="stats">
+                      <div class="stat">
+                        <span id="p_num" class="value">2</span>
+                        <span class="label">Posts</span>
+                      </div>
+                      <div class="stat">
+                        <span id="p_flo" class="value">4</span>
+                        <span data-id="0" class="label2">Followers</span>
+                      </div>
+                      <div class="stat">
+                        <span id="p_fli" class="value">8</span>
+                        <span data-id="1" class="label2">Following</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                  </div>
+                <!-- <button>Edit Profile</button> -->
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="follow-block">
+            <!-- Modal content -->
+            <div class="follow-content">
+
+            </div>
+          </div>
+    </section>
+
+
+
+    <div id='myModalf' class='modalf'>
+        <div class='modal-contentf'>
+            <span class='closef'>&times;</span>
+            <h2>Update User Information</h2>
+            <form id='updateUserInfoFormf' method="post" enctype="multipart/form-data">
+            </form>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Social Website</p>
+    </footer>
+
+</body>
+</html>
+
+
