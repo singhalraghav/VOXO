@@ -10,7 +10,7 @@ Voxo is designed to be a simple yet powerful social networking platform where us
 - Manage personal posts and profile
 - View a personalized feed based on followed users
 
-### 7. **Technologies Used**
+### **Technologies Used**
 -PHP
 -HTML,CSS,JS,Jquery,AJAX
 -Mysql
